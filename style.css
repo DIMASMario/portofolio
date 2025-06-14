@@ -1,0 +1,652 @@
+/* Custom Properties for Colors */
+:root {
+    --primary-color: #4F46E5; /* Biru Keunguan */
+    --background-light: #F5F5F5; /* Abu Netral Terang - untuk body default dan section */
+    --background-dark: #1A202C; /* Dark Mode Background - untuk body dan section di dark mode */
+    --text-color-light: #333; /* Warna teks default untuk mode terang */
+    --text-color-dark: #F5F5F5; /* Warna teks default untuk mode gelap */
+    --card-background-light: #fff;
+    --card-background-dark: #2D3748;
+    --border-color-light: #ddd;
+    --border-color-dark: #4A5568;
+    --gradient-start-light: #a7bfe8; /* Soft blue */
+    --gradient-end-light: #619af0; /* Soft blue deeper */
+    --gradient-start-dark: #2f3640; /* Darker gradient for dark mode */
+    --gradient-end-dark: #1a202c; /* Even darker */
+}
+
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color-light); /* Warna teks default */
+    background-color: var(--background-light); /* Warna background default untuk body */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transisi halus saat beralih mode */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color); /* Warna link default */
+}
+
+/* Header and Navigation */
+.header {
+    background-color: #333; /* Warna header di mode terang. Saya ubah sedikit agar kontras */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 15px 0;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Transisi untuk header */
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-link {
+    color: #fff; /* Warna link di header default (agar terlihat di background header gelap) */
+    font-weight: 600;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--primary-color);
+}
+
+.theme-toggle {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: #fff; /* Warna ikon toggle default (agar terlihat di background header gelap) */
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.theme-toggle:hover {
+    color: var(--primary-color);
+}
+
+/* Hero Section (Landing Page) */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(135deg, var(--gradient-start-light), var(--gradient-end-light));
+    color: #fff; /* Pastikan teks di hero berwarna putih agar selalu terlihat di atas gradien */
+    position: relative;
+    padding-top: 80px; /* Space for fixed header */
+    transition: background 0.3s ease, color 0.3s ease; /* Transisi untuk hero */
+}
+
+.hero-content {
+    margin-bottom: 50px; /* Jarak antara teks dan tombol scroll */
+}
+
+.hero-content h1 {
+    font-size: 4.5rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+    line-height: 1.1;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    color: #fff; /* Eksplisit agar warna putih di hero tetap */
+}
+
+.hero-content .role {
+    font-size: 1.8rem;
+    font-weight: 300;
+    opacity: 0.9;
+    color: #fff; /* Eksplisit agar warna putih di hero tetap */
+}
+
+.scroll-down-btn {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2rem;
+    color: #fff; /* Warna ikon scroll down default */
+    border: 2px solid #fff; /* Border ikon scroll down default */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: bounce 2s infinite;
+    transition: all 0.3s ease;
+}
+
+.scroll-down-btn:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0) translateX(-50%);
+    }
+    40% {
+        transform: translateY(-15px) translateX(-50%);
+    }
+    60% {
+        transform: translateY(-7px) translateX(-50%);
+    }
+}
+
+/* Sections General Styling */
+section {
+    padding: 80px 0;
+    text-align: center;
+    background-color: var(--background-light); /* Default background untuk semua section */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transisi untuk semua section */
+}
+
+section h2 {
+    font-size: 2.8rem;
+    margin-bottom: 40px;
+    color: var(--primary-color); /* Judul section selalu primary color */
+}
+
+/* About Section */
+.about-section p {
+    max-width: 800px;
+    margin: 0 auto 40px;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px; /* Jarak antar skill item */
+    margin-top: 40px;
+}
+
+.skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 15px;
+    background-color: var(--card-background-light);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    width: 150px; /* Lebar tetap untuk setiap item skill */
+    min-height: 120px; /* Tinggi minimum agar konsisten */
+    justify-content: center; /* Pusatkan konten vertikal */
+}
+
+.skill-item:hover {
+    transform: translateY(-5px);
+}
+
+.skill-item img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.skill-item span {
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-align: center; /* Pusatkan teks skill */
+}
+
+
+/* Projects Section */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.project-card {
+    background-color: var(--card-background-light);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, border 0.3s ease;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.project-card h3 {
+    font-size: 1.5rem;
+    margin: 20px 20px 10px;
+    color: var(--primary-color);
+}
+
+.project-card .technologies {
+    font-size: 0.9rem;
+    color: #777; /* Warna default untuk teks teknologi */
+    margin: 0 20px 10px;
+}
+
+.project-card p {
+    font-size: 1rem;
+    margin: 0 20px 20px;
+    flex-grow: 1; /* Make description take available space */
+}
+
+.project-card .github-link {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin: 0 20px 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    align-self: flex-start; /* Align link to the left */
+}
+
+.project-card .github-link i {
+    margin-right: 8px;
+}
+
+.project-card .github-link:hover {
+    background-color: #3f36c4; /* Slightly darker primary */
+}
+
+/* Certificates Section */
+.certificates-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+    justify-content: center;
+}
+
+.certificate-item {
+    background-color: var(--card-background-light);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+}
+
+.certificate-item:hover {
+    transform: translateY(-5px);
+}
+
+.certificate-item img {
+    width: 80px; /* Adjust size as needed */
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.certificate-item span:first-of-type {
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.certificate-item span:last-of-type {
+    font-size: 0.9rem;
+    color: #777; /* Warna default untuk tahun sertifikasi */
+}
+
+/* Contact Section */
+.contact-info {
+    margin-bottom: 40px;
+    font-size: 1.1rem;
+}
+
+.contact-info p {
+    margin-bottom: 15px;
+}
+
+.contact-info a {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--text-color-light); /* Warna link kontak default */
+    transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+    color: var(--primary-color);
+}
+
+.contact-info i {
+    font-size: 1.4rem;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px;
+    background-color: var(--card-background-light);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 15px;
+    border: 1px solid var(--border-color-light);
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    background-color: transparent; /* Pastikan ini transparan agar bisa mengikuti background form */
+    color: var(--text-color-light); /* Warna teks input default */
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+.contact-form textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.contact-form button {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #3f36c4;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--card-background-light);
+    padding: 30px 0;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #777; /* Warna teks footer default */
+    border-top: 1px solid var(--border-color-light);
+    transition: background-color 0.3s ease, color 0.3s ease, border-top 0.3s ease;
+}
+
+.footer .social-links {
+    margin-top: 15px;
+}
+
+.footer .social-links a {
+    color: #777; /* Warna ikon sosial media default */
+    font-size: 1.5rem;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.footer .social-links a:hover {
+    color: var(--primary-color);
+}
+
+
+/* --- Dark Mode Overrides --- */
+body.dark-mode {
+    background-color: var(--background-dark); /* Mengatur warna background utama BODY */
+    color: var(--text-color-dark); /* Mengatur warna teks default untuk seluruh body */
+}
+
+/* Mengatur warna background untuk semua SECTION di dark mode */
+body.dark-mode section {
+    background-color: var(--background-dark);
+}
+
+
+body.dark-mode .header {
+    background-color: var(--card-background-dark);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+body.dark-mode .nav-link {
+    color: var(--text-color-dark);
+}
+
+body.dark-mode .nav-link:hover {
+    color: var(--primary-color);
+}
+
+body.dark-mode .hero {
+    background: linear-gradient(135deg, var(--gradient-start-dark), var(--gradient-end-dark));
+    color: var(--text-color-dark); /* Hero text juga diatur ke dark text color */
+}
+
+/* Pastikan warna teks di hero tetap terlihat di dark mode */
+body.dark-mode .hero-content h1,
+body.dark-mode .hero-content .role {
+    color: var(--text-color-dark); /* Atau tetap #fff jika ingin selalu putih di hero */
+}
+
+
+body.dark-mode .scroll-down-btn {
+    color: var(--text-color-dark);
+    border-color: var(--text-color-dark);
+}
+
+/* Pastikan semua paragraf dan elemen teks lainnya mendapatkan warna yang benar */
+body.dark-mode p,
+body.dark-mode span {
+    color: var(--text-color-dark); /* Mengatur warna teks untuk p dan span di dark mode */
+}
+
+body.dark-mode a {
+    color: var(--text-color-dark); /* Default link color di dark mode */
+}
+
+/* Override khusus untuk link yang seharusnya berwarna primary (misal di footer/kontak) */
+body.dark-mode .contact-info a {
+    color: var(--text-color-dark); /* Teks email/LinkedIn/GitHub di kontak */
+}
+
+body.dark-mode .contact-info a:hover {
+    color: var(--primary-color);
+}
+
+body.dark-mode .project-card .github-link {
+    color: var(--text-color-dark); /* Pastikan teks di tombol GitHub terlihat */
+}
+
+body.dark-mode .skill-item {
+    background-color: var(--card-background-dark);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+body.dark-mode .skill-item span {
+    color: var(--text-color-dark); /* Memastikan teks skill terbaca */
+}
+
+body.dark-mode .project-card {
+    background-color: var(--card-background-dark);
+    border: 1px solid var(--border-color-dark);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode .project-card h3 {
+    color: var(--primary-color); /* Judul proyek tetap primary color */
+}
+
+body.dark-mode .project-card .technologies {
+    color: rgba(245, 245, 245, 0.8); /* Warna teks teknologi sedikit redup di dark mode */
+}
+
+body.dark-mode .certificate-item {
+    background-color: var(--card-background-dark);
+    border: 1px solid var(--border-color-dark);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+body.dark-mode .certificate-item span:first-of-type {
+    color: var(--text-color-dark); /* Teks nama sertifikasi */
+}
+
+body.dark-mode .certificate-item span:last-of-type {
+    color: rgba(245, 245, 245, 0.7); /* Tahun sertifikasi sedikit redup */
+}
+
+body.dark-mode .contact-form {
+    background-color: var(--card-background-dark);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode .contact-form input,
+body.dark-mode .contact-form textarea {
+    background-color: var(--card-background-dark);
+    border: 1px solid var(--border-color-dark);
+    color: var(--text-color-dark);
+}
+
+body.dark-mode .contact-form input::placeholder,
+body.dark-mode .contact-form textarea::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+body.dark-mode .contact-form button {
+    background-color: var(--primary-color);
+    color: var(--text-color-dark); /* Pastikan teks tombol kirim terlihat */
+}
+
+body.dark-mode .footer {
+    background-color: var(--card-background-dark);
+    color: var(--text-color-dark);
+    border-top: 1px solid var(--border-color-dark);
+}
+
+body.dark-mode .footer .social-links a {
+    color: var(--text-color-dark);
+}
+
+body.dark-mode .footer .social-links a:hover {
+    color: var(--primary-color);
+}
+
+body.dark-mode .theme-toggle {
+    background-color: var(--card-background-dark); /* Sesuaikan jika perlu */
+    color: var(--text-color-dark);
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header {
+        padding: 10px 0;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .hero-content h1 {
+        font-size: 3rem;
+    }
+
+    .hero-content .role {
+        font-size: 1.4rem;
+    }
+
+    section {
+        padding: 60px 0;
+    }
+
+    section h2 {
+        font-size: 2.2rem;
+    }
+
+    .about-section p {
+        font-size: 1rem;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Sesuaikan lebar skill item di mobile */
+        gap: 15px;
+    }
+
+    .skill-item {
+        width: 120px;
+    }
+
+    .projects-grid,
+    .certificates-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .contact-form {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content .role {
+        font-size: 1.2rem;
+    }
+
+    .scroll-down-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 1.5rem;
+    }
+
+    section h2 {
+        font-size: 1.8rem;
+    }
+
+    .nav-link {
+        font-size: 0.9rem;
+    }
+}
