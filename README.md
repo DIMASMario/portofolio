@@ -35,7 +35,7 @@ Untuk menjalankan portofolio ini secara lokal di komputer Anda:
 
 Anda bisa melihat versi langsung dari portofolio ini yang di-*hosting* melalui GitHub Pages di sini:
 
-[https://DIMASMario.github.io/my_portofolio/](https://DIMASMario.github.io/my_portofolio/)
+(https://dimasmario.github.io/portofolio/)
 
 *(Pastikan Anda telah mengaktifkan GitHub Pages untuk repositori ini melalui `Settings` > `Pages` di GitHub jika tautan di atas belum berfungsi.)*
 
