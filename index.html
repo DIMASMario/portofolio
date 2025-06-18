@@ -5,164 +5,700 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dimas Mario - Cloud Engineer & DevOps Enthusiast</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>☁️</text></svg>">
 </head>
 <body>
-    <header class="header">
-        <nav class="navbar">
-            <a href="#home" class="nav-link">Home</a>
-            <a href="#about" class="nav-link">Tentang Saya</a>
-            <a href="#projects" class="nav-link">Proyek</a>
-            <a href="#certificates" class="nav-link">Sertifikasi</a>
-            <a href="#contact" class="nav-link">Kontak</a>
-            <button id="theme-toggle" class="theme-toggle">
-                <i class="fas fa-moon"></i> </button>
-        </nav>
-    </header>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">DM</span>
+                <span class="logo-subtitle">Cloud Engineer</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
 
-    <main>
-        <section id="home" class="hero">
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
             <div class="hero-content">
-                <h1>Dimas Mario</h1>
-                <p class="role">Cloud Engineer & DevOps Enthusiast</p>
-                <a href="#about" class="scroll-down-btn">
-                    <i class="fas fa-chevron-down"></i>
-                </a>
-            </div>
-        </section>
-
-        <section id="about" class="about-section">
-            <div class="container">
-                <h2>Tentang Saya</h2>
-                <p>Halo! Saya adalah seorang mahasiswa Sistem Informasi yang memiliki minat mendalam dalam dunia cloud computing dan DevOps. Saya aktif mempelajari dan mengimplementasikan solusi-solusi berbasis Google Cloud Platform (GCP), Terraform untuk Infrastructure as Code, serta Scripting dengan Python untuk otomatisasi. Saya selalu antusias untuk terus belajar dan berkontribusi dalam proyek-proyek inovatif di bidang ini.</p>
-                <div class="skills-grid">
-                    <div class="skill-item">
-                        <img src="asset/gcloud.png" alt="Google Cloud Platform">
-                        <span>Google Cloud Platform</span>
-                    </div>
-                    <div class="skill-item">
-                        <img src="asset/py.png" alt="Python">
-                        <span>Python</span>
-                    </div>
-                    <div class="skill-item">
-                        <img src="asset/java.png" alt="JavaScript">
-                        <span>JavaScript</span>
-                    </div>
-                    <div class="skill-item">
-                        <img src="asset/dockerr.png" alt="Docker">
-                        <span>Docker</span>
-                    </div>
-
-                    <div class="skill-item">
-                        <img src="asset/cloud_run.png" alt="Google Cloud Run">
-                        <span>Cloud Run</span>
-                    </div>
-                    <div class="skill-item">
-                        <img src="asset/cloud_storage.png" alt="Google Cloud Storage">
-                        <span>Cloud Storage</span>
-                    </div>
-                    <div class="skill-item">
-                        <img src="asset/cloud_sql.png" alt="Google Cloud SQL">
-                        <span>Cloud SQL</span>
-                    </div>
-                    <div class="skill-item">
-                        <img src="asset/flaskkk.png" alt="Google Cloud SQL">
-                        <span>Flask</span>
-                    </div>
-
-                    </div>
-            </div>
-        </section>
-
-        <section id="projects" class="projects-section">
-            <div class="container">
-                <h2>Proyek Unggulan</h2>
-                <div class="projects-grid">
-                    <div class="project-card">
-                        <img src="asset/free_prediction.png" alt="Free Skin Prediction Project">
-                        <h3>Free Skin Prediction</h3>
-                        <p class="technologies">Teknologi: Google Cloud Platform (Cloud Run, Cloud Storage), Flask, Machine Learning, HTML/CSS/JS</p>
-                        <p>Mengembangkan aplikasi prediksi penyakit kulit berbasis Machine Learning, termasuk pembangunan backend API dengan Flask dan frontend UI, lalu mendeploy seluruh stack di Google Cloud Platform.</p>
-                        <a href="https://github.com/DIMASMario/mlgc_dimas" target="_blank" class="github-link">
-                            <i class="fab fa-github"></i> Lihat di GitHub
-                        </a>
+                <div class="hero-text">
+                    <div class="hero-greeting">👋 Halo, Saya</div>
+                    <h1 class="hero-title">
+                        <span class="highlight" data-text="Dimas Mario">Dimas Mario</span>
+                    </h1>
+                    <h2 class="hero-subtitle">Cloud Engineer & DevOps Enthusiast</h2>
+                    <p class="hero-description">
+                        🚀 Passionate tentang membangun infrastruktur cloud yang scalable dan mengotomatisasi proses deployment. 
+                        Spesialisasi dalam Google Cloud Platform, Terraform, dan praktik DevOps modern untuk menciptakan solusi yang efisien dan andal.
+                    </p>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="15">2</div>
+                            <div class="stat-label">Projects Completed</div>
                         </div>
-
-                    <div class="project-card">
-                        <img src="asset/green_guard.png" alt="Green Guard Project">
-                        <h3>Green Guard - Plant Classification API</h3>
-                        <p class="technologies">Teknologi: GCP (Cloud Run, Cloud Storage, API Gateway), Flask, Machine Learning</p>
-                        <p>Mengembangkan API berbasis Machine Learning untuk deteksi dan klasifikasi penyakit tanaman menggunakan layanan Google Cloud Platform (GCP) seperti Cloud Run untuk deployment serverless dan Cloud Storage untuk penyimpanan data.</p>
-                        <a href="https://github.com/GreenGuardTeam/Capstone_GreenGuard/tree/main/Cloud%20Computing%20Path" target="_blank" class="github-link"> <i class="fab fa-github"></i> Lihat di GitHub
-                        </a>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="5">--</div>
+                            <div class="stat-label">Cloud Certifications</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="2">1</div>
+                            <div class="stat-label">Years Experience</div>
+                        </div>
                     </div>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">
+                            <i class="fas fa-rocket"></i>
+                            View My Work
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <i class="fas fa-coffee"></i>
+                            Let's Collaborate
+                        </a>
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <section id="certificates" class="certificates-section">
-            <div class="container">
-                <h2>Sertifikasi</h2>
-                <div class="certificates-grid">
-                    <div class="certificate-item">
-                        <img src="asset/aws.png" alt="AWS Certificate"> <span>Belajar Dasar Cloud dan Gen AI di AWS</span>
-                        <span>April 2025</span>
+                <div class="hero-visual">
+                    <div class="hero-avatar">
+                        <div class="avatar-ring"></div>
+                        <div class="avatar-image">
+                            <img src="asset/saya.jpg" alt="Dimas Mario" class="profile-photo">
                         </div>
-                    <div class="certificate-item">
-                        <img src="asset/cloud_engginer.png" alt="Google Cloud Engineer Certificate"> <span>Menjadi Google Cloud Engineer</span>
-                        <span>November 2024</span>
+                    </div>
+                    <div class="floating-tech">
+                        <div class="tech-card" data-delay="0">
+                            <img src="asset/gcloud.png" alt="GCP" class="tech-icon">
+                            <span>GCP</span>
                         </div>
-                    <div class="certificate-item">
-                        <img src="asset/mlgc.png" alt="Machine Learning on GCP Certificate"> <span>Belajar Penerapan Machine Learning dengan Google Cloud</span>
-                        <span>November 2024</span>
+                        <div class="tech-card" data-delay="200">
+                            <img src="asset/dockerr.png" alt="Docker" class="tech-icon">
+                            <span>Docker</span>
                         </div>
-                     <div class="certificate-item">
-                        <img src="asset/elastic.png" alt="Elastic Google Cloud Infrastructure Skill Badge"> <span>Elastic Google Cloud Infrastructure: Scaling and Automation</span>
-                        <span>November 2024</span>
+                        <div class="tech-card" data-delay="400">
+                            <img src="asset/py.png" alt="Python" class="tech-icon">
+                            <span>Python</span>
                         </div>
-                    <div class="certificate-item">
-                        <img src="asset/google sre.png" alt="Developing a Google SRE Culture Certificate"> <span>Developing a Google SRE Culture</span>
-                        <span>Oktober 2024</span>
+                        <div class="tech-card" data-delay="600">
+                            <i class="fas fa-tools"></i>
+                            <span>Terraform</span>
                         </div>
-                    <div class="certificate-item">
-                        <img src="asset/backend.png" alt="Backend Development on GCP Certificate"> <span>Belajar Membuat Aplikasi Back-End untuk Pemula dengan Google Cloud</span>
-                        <span>Januari 2024</span>
+                        <div class="tech-card" data-delay="800">
+                            <img src="asset/java.png" alt="Java" class="tech-icon">
+                            <span>Java</span>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-text">Scroll Down</div>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
 
-        <section id="contact" class="contact-section">
-            <div class="container">
-                <h2>Kontak Saya</h2>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">🧑‍💻 Get To Know Me</span>
+                <h2 class="section-title">Tentang Saya</h2>
+                <p class="section-subtitle">Cloud Engineer yang passionate dengan teknologi dan otomatisasi ☕</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="about-card">
+                        <div class="card-icon">
+                            <img src="asset/cloud_engginer.png" alt="Cloud Engineer" class="card-icon-img">
+                        </div>
+                        <div class="card-content">
+                            <h3>Cloud Infrastructure Expert</h3>
+                            <p>
+                                Saya adalah seorang Cloud Engineer dengan passion mendalam terhadap teknologi cloud dan otomatisasi. 
+                                Dengan fokus utama pada Google Cloud Platform (GCP), saya memiliki pengalaman dalam membangun dan 
+                                mengelola infrastruktur cloud yang scalable, andal, dan efisien.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="about-card">
+                        <div class="card-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <div class="card-content">
+                            <h3>DevOps & Automation</h3>
+                            <p>
+                                Perjalanan saya dimulai dari ketertarikan pada komputasi awan dan berkembang menjadi keahlian dalam 
+                                Infrastructure as Code (IaC) menggunakan Terraform, containerization dengan Docker, dan implementasi 
+                                praktik DevOps modern. Saya juga sedang memperdalam pengetahuan tentang Kubernetes dan CI/CD pipeline.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="about-card">
+                        <div class="card-icon">
+                            <i class="fas fa-coffee"></i>
+                        </div>
+                        <div class="card-content">
+                            <h3>Fun Fact</h3>
+                            <p>
+                                Saya suka ngulik cloud sambil menikmati americano panas — ngopi sambil ngoding itu versi terbaik fokus saya ☕💻
+                                Kombinasi caffeine dan coding membuat saya lebih produktif dalam memecahkan tantangan infrastruktur!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-visual">
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h4>🎯 Currently Working On</h4>
+                                <p>Belajar dan mengembangkan infrastruktur cloud menggunakan GCP dan Terraform</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h4>🤝 Looking to Collaborate</h4>
+                                <p>Proyek cloud infrastructure, DevOps automation, atau backend berbasis cloud</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h4>🌱 Currently Learning</h4>
+                                <p>Docker, Kubernetes, dan CI/CD pipeline untuk deployment otomatis</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h4>💬 Ask Me About</h4>
+                                <p>Infrastructure as Code dengan Terraform, manajemen GCP, dan backend cloud</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">⚡ My Expertise</span>
+                <h2 class="section-title">Keahlian Teknis</h2>
+                <p class="section-subtitle">Teknologi dan tools yang saya kuasai dalam ekosistem cloud dan DevOps</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category" data-category="cloud">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <img src="asset/gcloud.png" alt="Cloud" class="category-icon-img">
+                        </div>
+                        <h3 class="category-title">Cloud Platforms</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Google Cloud Platform</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">AWS (Fundamentals)</span>
+                                <span class="skill-percentage">65%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="65"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category" data-category="programming">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <img src="asset/py.png" alt="Programming" class="category-icon-img">
+                        </div>
+                        <h3 class="category-title">Programming Languages</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Python</span>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">JavaScript</span>
+                                <span class="skill-percentage">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Java</span>
+                                <span class="skill-percentage">65%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="65"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category" data-category="devops">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <img src="asset/dockerr.png" alt="DevOps" class="category-icon-img">
+                        </div>
+                        <h3 class="category-title">DevOps & Tools</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Terraform</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Docker</span>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Kubernetes</span>
+                                <span class="skill-percentage">70%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="70"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category" data-category="database">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <img src="asset/cloud_sql.png" alt="Database" class="category-icon-img">
+                        </div>
+                        <h3 class="category-title">Databases & Storage</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Cloud SQL</span>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Cloud Storage</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">PostgreSQL</span>
+                                <span class="skill-percentage">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="75"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">🚀 My Work</span>
+                <h2 class="section-title">Proyek Unggulan</h2>
+                <p class="section-subtitle">Beberapa proyek yang telah saya kerjakan dengan teknologi cloud modern</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card featured">
+                    <div class="project-image">
+                        <img src="asset/free_prediction.png" alt="Free Skin Prediction" class="project-img">
+                        <div class="project-overlay">
+                            <div class="project-tech-icons">
+                                <img src="asset/flaskkk.png" alt="Flask" class="tech-overlay-icon">
+                                <img src="asset/gcloud.png" alt="GCP" class="tech-overlay-icon">
+                                <img src="asset/cloud_run.png" alt="Cloud Run" class="tech-overlay-icon">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-badge">Featured Project</div>
+                        <h3 class="project-title">Free Skin Prediction</h3>
+                        <p class="project-description">
+                            Aplikasi machine learning dengan backend Flask dan frontend yang di-deploy di Google Cloud Platform. 
+                            Menggunakan Cloud Run untuk containerized deployment dan Cloud SQL untuk database management.
+                            Sistem prediksi yang scalable dengan arsitektur serverless.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Flask</span>
+                            <span class="tech-tag">GCP</span>
+                            <span class="tech-tag">Cloud Run</span>
+                            <span class="tech-tag">ML</span>
+                            <span class="tech-tag">Docker</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link primary">
+                                <i class="fas fa-external-link-alt"></i>
+                                Live Demo
+                            </a>
+                            <a href="https://github.com/DIMASMario/mlgc_dimas" class="project-link">
+                                <i class="fab fa-github"></i>
+                                Source Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="asset/green_guard.png" alt="Green Guard" class="project-img">
+                        <div class="project-overlay">
+                            <div class="project-tech-icons">
+                                <img src="asset/py.png" alt="Python" class="tech-overlay-icon">
+                                <img src="asset/gcloud.png" alt="GCP" class="tech-overlay-icon">
+                                <img src="asset/cloud_storage.png" alt="Cloud Storage" class="tech-overlay-icon">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Green Guard - Plant Classification API</h3>
+                        <p class="project-description">
+                            API machine learning untuk deteksi penyakit tanaman menggunakan layanan serverless Google Cloud Platform. 
+                            Implementasi dengan Cloud Functions dan Cloud Storage untuk handling model ML.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Cloud Functions</span>
+                            <span class="tech-tag">Cloud Storage</span>
+                            <span class="tech-tag">API</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link primary">
+                                <i class="fas fa-external-link-alt"></i>
+                                Live Demo
+                            </a>
+                            <a href="https://github.com/GreenGuardTeam/Capstone_GreenGuard/tree/main/Cloud%20Computing%20Path" class="project-link">
+                                <i class="fab fa-github"></i>
+                                Source Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="asset/elastic.png" alt="Infrastructure Monitoring" class="project-img">
+                        <div class="project-overlay">
+                            <div class="project-tech-icons">
+                                <img src="asset/dockerr.png" alt="Docker" class="tech-overlay-icon">
+                                <i class="fas fa-chart-line tech-overlay-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Infrastructure Monitoring System</h3>
+                        <p class="project-description">
+                            Implementasi sistem monitoring menggunakan Prometheus dan Grafana untuk memantau kesehatan infrastruktur. 
+                            Setup otomatis menggunakan Terraform dan deployment dengan Docker containers.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Prometheus</span>
+                            <span class="tech-tag">Grafana</span>
+                            <span class="tech-tag">Terraform</span>
+                            <span class="tech-tag">Docker</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link primary">
+                                <i class="fas fa-external-link-alt"></i>
+                                Live Demo
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github"></i>
+                                Source Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">🏆 Achievements</span>
+                <h2 class="section-title">Sertifikasi & Achievements</h2>
+                <p class="section-subtitle">Sertifikasi profesional dan skill badge yang saya miliki</p>
+            </div>
+            <div class="certifications-grid">
+                <div class="cert-card">
+                    <div class="cert-header">
+                        <div class="cert-icon">
+                            <img src="asset/gcloud.png" alt="Google Cloud" class="cert-icon-img">
+                        </div>
+                        <div class="cert-badge">Professional</div>
+                    </div>
+                    <h3 class="cert-title">Google Cloud Certifications</h3>
+                    <ul class="cert-list">
+                        <li><i class="fas fa-check-circle"></i>Associate Cloud Engineer</li>
+                        <li><i class="fas fa-check-circle"></i>Cloud Architecture</li>
+                        <li><i class="fas fa-check-circle"></i>Cloud DevOps Engineer</li>
+                    </ul>
+                    <div class="cert-footer">
+                        <span class="cert-count">3 Certifications</span>
+                    </div>
+                </div>
+
+                <div class="cert-card">
+                    <div class="cert-header">
+                        <div class="cert-icon">
+                            <img src="asset/mlgc.png" alt="Machine Learning" class="cert-icon-img">
+                        </div>
+                        <div class="cert-badge">Educational</div>
+                    </div>
+                    <h3 class="cert-title">Dicoding Certifications</h3>
+                    <ul class="cert-list">
+                        <li><i class="fas fa-check-circle"></i>Cloud Computing</li>
+                        <li><i class="fas fa-check-circle"></i>DevOps Fundamentals</li>
+                        <li><i class="fas fa-check-circle"></i>Backend Development</li>
+                    </ul>
+                    <div class="cert-footer">
+                        <span class="cert-count">3 Certifications</span>
+                    </div>
+                </div>
+
+                <div class="cert-card">
+                    <div class="cert-header">
+                        <div class="cert-icon">
+                            <img src="asset/aws.png" alt="AWS" class="cert-icon-img">
+                        </div>
+                        <div class="cert-badge">Fundamental</div>
+                    </div>
+                    <h3 class="cert-title">AWS Fundamentals</h3>
+                    <ul class="cert-list">
+                        <li><i class="fas fa-check-circle"></i>AWS Cloud Practitioner</li>
+                        <li><i class="fas fa-check-circle"></i>EC2 & S3 Basics</li>
+                        <li><i class="fas fa-check-circle"></i>IAM Fundamentals</li>
+                    </ul>
+                    <div class="cert-footer">
+                        <span class="cert-count">3 Certifications</span>
+                    </div>
+                </div>
+
+                <div class="cert-card">
+                    <div class="cert-header">
+                        <div class="cert-icon">
+                            <img src="asset/google sre.png" alt="SRE" class="cert-icon-img">
+                        </div>
+                        <div class="cert-badge">Skill Badge</div>
+                    </div>
+                    <h3 class="cert-title">Technical Skills</h3>
+                    <ul class="cert-list">
+                        <li><i class="fas fa-check-circle"></i>Site Reliability Engineering</li>
+                        <li><i class="fas fa-check-circle"></i>Backend Development</li>
+                        <li><i class="fas fa-check-circle"></i>Infrastructure Management</li>
+                    </ul>
+                    <div class="cert-footer">
+                        <span class="cert-count">Multiple Badges</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">☕ Let's Connect</span>
+                <h2 class="section-title">Mari Berkolaborasi</h2>
+                <p class="section-subtitle">Tertarik untuk bekerja sama? Mari kita diskusikan sambil ngopi! ☕</p>
+            </div>
+            <div class="contact-content">
                 <div class="contact-info">
-                    <p><a href="mailto:dimasmario864@gmail.com"><i class="fas fa-envelope"></i> dimasmario864@gmail.com</a></p>
-                    <p><a href="https://www.linkedin.com/in/dimas-mario" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn/Dimas Mario</a></p>
-                    <p><a href="https://github.com/DIMASMario" target="_blank"><i class="fab fa-github"></i> GitHub/DIMASMario</a></p>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>dimasmario864@gmail.com</p>
+                            <a href="mailto:dimasmario@example.com" class="contact-link">Send Message</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>LinkedIn</h3>
+                            <p>Connect with me professionally</p>
+                            <a href="https://www.linkedin.com/in/dimas-mario/" class="contact-link">View Profile</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>GitHub</h3>
+                            <p>Check out my repositories</p>
+                            <a href="https://github.com/DIMASMario" class="contact-link">View Profile</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-coffee"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Coffee Chat</h3>
+                            <p>Let's discuss over coffee</p>
+                            <a href="#" class="contact-link">Schedule Meeting</a>
+                        </div>
+                    </div>
                 </div>
-                <form id="contact-form" class="contact-form">
-                    <input type="text" name="name" placeholder="Nama Anda" required>
-                    <input type="email" name="email" placeholder="Email Anda" required>
-                    <textarea name="message" rows="5" placeholder="Pesan Anda" required></textarea>
-                    <button type="submit">Kirim Pesan</button>
-                </form>
+                <div class="contact-form-container">
+                    <div class="form-header">
+                        <h3>Send me a message</h3>
+                        <p>I'll get back to you within 24 hours</p>
+                    </div>
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Nama</label>
+                                <input type="text" id="name" name="name" placeholder="Nama Anda" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="email@example.com" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Pilih topik diskusi</option>
+                                <option value="collaboration">Project Collaboration</option>
+                                <option value="consultation">Cloud Consultation</option>
+                                <option value="hiring">Hiring Discussion</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Pesan</label>
+                            <textarea id="message" name="message" placeholder="Ceritakan tentang proyek atau ide Anda..." rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <i class="fas fa-paper-plane"></i>
+                            Kirim Pesan
+                        </button>
+                    </form>
+                </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Dimas Mario. All Rights Reserved.</p>
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/dimas-mario/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/DIMASMario" target="_blank"><i class="fab fa-github"></i></a>
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <span class="logo-text">DM</span>
+                        <span class="logo-subtitle">Cloud Engineer</span>
+                    </div>
+                    <p class="footer-description">
+                        Building scalable cloud infrastructure with passion ☁️
+                    </p>
                 </div>
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#skills">Skills</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Technologies</h4>
+                        <ul>
+                            <li><a href="#">Google Cloud</a></li>
+                            <li><a href="#">Terraform</a></li>
+                            <li><a href="#">Docker</a></li>
+                            <li><a href="#">Python</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Connect</h4>
+                        <div class="footer-social">
+                            <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-link"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Dimas Mario. All rights reserved</p>
+            </div>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
