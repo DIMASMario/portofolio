@@ -14,39 +14,7 @@ Selamat datang di portofolio pribadi saya! Situs web ini dirancang untuk menyoro
 * **Kontak:** Cara untuk menghubungi saya.
 
 Portofolio ini bertujuan untuk menunjukkan pengalaman praktis saya dalam membangun dan mengelola solusi *cloud* yang *scalable*, andal, dan efisien.
-
----
-
-## Setup Lokal
-
-Untuk menjalankan portofolio ini secara lokal di komputer Anda:
-
-1.  **Clone repositori ini:**
-    ```bash
-    git clone [https://github.com/DIMASMario/my_portofolio.git](https://github.com/DIMASMario/my_portofolio.git)
-    ```
-2.  **Navigasi ke direktori proyek:**
-    ```bash
-    cd my_portofolio
-    ```
-3.  **Buka file `index.html`** di peramban web pilihan Anda (misalnya Google Chrome, Firefox, dll.).
-
-## Demo Langsung
-
-Anda bisa melihat versi langsung dari portofolio ini yang di-*hosting* melalui GitHub Pages di sini:
-
-(https://dimasmario.github.io/portofolio/)
-
-*(Pastikan Anda telah mengaktifkan GitHub Pages untuk repositori ini melalui `Settings` > `Pages` di GitHub jika tautan di atas belum berfungsi.)*
-
----
-
-## Tangkapan Layar (Opsional)
-
-![Tangkapan Layar Portofolio](assets/screenshot_portofolio.png)
-
-*(**Catatan:** Jika Anda ingin menampilkan tangkapan layar, pastikan Anda memiliki file gambar bernama `screenshot_portofolio.png` di dalam folder `assets` di repositori Anda.)*
-
----
+(https://github.com/DIMASMario/my_portofolio.git)
+    
 
 Terima kasih telah mengunjungi portofolio saya!
