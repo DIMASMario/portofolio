@@ -10,11 +10,14 @@
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>☁️</text></svg>">
 </head>
 <body>
+    <div id="preloader">
+        <div class="spinner"></div>
+    </div>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <span class="logo-text">DM</span>
+                <span class="logo-text">D</span>
                 <span class="logo-subtitle">Cloud Engineer</span>
             </div>
             <ul class="nav-menu">
@@ -25,10 +28,16 @@
                 <li><a href="#certifications" class="nav-link">Certifications</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
+            <div class="nav-controls">
+                <button id="theme-toggle" class="theme-btn" title="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                </button>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
         </div>
     </nav>
@@ -38,14 +47,14 @@
         <div class="hero-container">
             <div class="hero-content">
                 <div class="hero-text">
-                    <div class="hero-greeting">👋 Halo, Saya</div>
+                    <p class="hero-greeting">👋 Halo, saya Dimas Mario</p>
                     <h1 class="hero-title">
-                        <span class="highlight" data-text="Dimas Mario">Dimas Mario</span>
+                        Cloud & DevOps Engineer
+                        <span class="highlight" data-text="Enthusiast.">Enthusiast.</span>
                     </h1>
-                    <h2 class="hero-subtitle">Cloud Engineer & DevOps Enthusiast</h2>
+                    <p class="hero-subtitle">Membangun infrastruktur cloud yang scalable dan efisien.</p>
                     <p class="hero-description">
-                        🚀 Passionate tentang membangun infrastruktur cloud yang scalable dan mengotomatisasi proses deployment. 
-                        Spesialisasi dalam Google Cloud Platform, Terraform, dan praktik DevOps modern untuk menciptakan solusi yang efisien dan andal.
+                        Mahasiswa Sistem Informasi dari Universitas Alma Ata Yogyakarta dengan pengalaman beginner pada bidang Cloud Computing & DevOps. Memiliki kemampuan tentang membangun infrastruktur cloud yang scalable dan mengotomatisasi proses deployment. Spesialisasi dalam Google Cloud Platform, Terraform, dan praktik DevOps modern untuk menciptakan solusi yang efisien dan andal
                     </p>
                     <div class="hero-stats">
                         <div class="stat-item">
@@ -53,53 +62,24 @@
                             <div class="stat-label">Projects Completed</div>
                         </div>
                         <div class="stat-item">
-                            <div class="stat-number" data-target="5">--</div>
+                            <div class="stat-number" data-target="5">6</div>
                             <div class="stat-label">Cloud Certifications</div>
                         </div>
-                        <div class="stat-item">
+                        <div class="stat-itemf">
                             <div class="stat-number" data-target="2">1</div>
                             <div class="stat-label">Years Experience</div>
                         </div>
                     </div>
                     <div class="hero-buttons">
-                        <a href="#projects" class="btn btn-primary">
-                            <i class="fas fa-rocket"></i>
-                            View My Work
-                        </a>
-                        <a href="#contact" class="btn btn-secondary">
-                            <i class="fas fa-coffee"></i>
-                            Let's Collaborate
-                        </a>
+                        <a href="#projects" class="btn btn-primary"><i class="fas fa-briefcase"></i> Lihat Proyek</a>
+                        <a href="asset/DIMAS MARIO.pdf" class="btn btn-secondary" download><i class="fas fa-download"></i> Unduh CV</a>
                     </div>
                 </div>
+
+                <!-- Tambahkan kembali bagian ini -->
                 <div class="hero-visual">
-                    <div class="hero-avatar">
-                        <div class="avatar-ring"></div>
-                        <div class="avatar-image">
-                            <img src="asset/saya.jpg" alt="Dimas Mario" class="profile-photo">
-                        </div>
-                    </div>
-                    <div class="floating-tech">
-                        <div class="tech-card" data-delay="0">
-                            <img src="asset/gcloud.png" alt="GCP" class="tech-icon">
-                            <span>GCP</span>
-                        </div>
-                        <div class="tech-card" data-delay="200">
-                            <img src="asset/dockerr.png" alt="Docker" class="tech-icon">
-                            <span>Docker</span>
-                        </div>
-                        <div class="tech-card" data-delay="400">
-                            <img src="asset/py.png" alt="Python" class="tech-icon">
-                            <span>Python</span>
-                        </div>
-                        <div class="tech-card" data-delay="600">
-                            <i class="fas fa-tools"></i>
-                            <span>Terraform</span>
-                        </div>
-                        <div class="tech-card" data-delay="800">
-                            <img src="asset/java.png" alt="Java" class="tech-icon">
-                            <span>Java</span>
-                        </div>
+                    <div class="hero-photo-container">
+                        <img src="asset/saya.jpg" alt="Dimas Mario" class="hero-photo">
                     </div>
                 </div>
             </div>
@@ -218,19 +198,19 @@
                         <div class="skill-item">
                             <div class="skill-info">
                                 <span class="skill-name">Google Cloud Platform</span>
-                                <span class="skill-percentage">85%</span>
+                                <span class="skill-percentage">Beginner</span>
                             </div>
                             <div class="skill-bar">
-                                <div class="skill-progress" data-progress="85"></div>
+                                <div class="skill-progress" data-progress="40"></div>
                             </div>
                         </div>
                         <div class="skill-item">
                             <div class="skill-info">
                                 <span class="skill-name">AWS (Fundamentals)</span>
-                                <span class="skill-percentage">65%</span>
+                                <span class="skill-percentage">Beginner</span>
                             </div>
                             <div class="skill-bar">
-                                <div class="skill-progress" data-progress="65"></div>
+                                <div class="skill-progress" data-progress="35"></div>
                             </div>
                         </div>
                     </div>
@@ -247,28 +227,28 @@
                         <div class="skill-item">
                             <div class="skill-info">
                                 <span class="skill-name">Python</span>
-                                <span class="skill-percentage">80%</span>
+                                <span class="skill-percentage">Beginner</span>
                             </div>
                             <div class="skill-bar">
-                                <div class="skill-progress" data-progress="80"></div>
+                                <div class="skill-progress" data-progress="45"></div>
                             </div>
                         </div>
                         <div class="skill-item">
                             <div class="skill-info">
                                 <span class="skill-name">JavaScript</span>
-                                <span class="skill-percentage">75%</span>
+                                <span class="skill-percentage">Beginner</span>
                             </div>
                             <div class="skill-bar">
-                                <div class="skill-progress" data-progress="75"></div>
+                                <div class="skill-progress" data-progress="40"></div>
                             </div>
                         </div>
                         <div class="skill-item">
                             <div class="skill-info">
-                                <span class="skill-name">Java</span>
-                                <span class="skill-percentage">65%</span>
+                                <span class="skill-name">PHP</span>
+                                <span class="skill-percentage">Profesional</span>
                             </div>
                             <div class="skill-bar">
-                                <div class="skill-progress" data-progress="65"></div>
+                                <div class="skill-progress" data-progress="35"></div>
                             </div>
                         </div>
                     </div>
@@ -285,28 +265,28 @@
                         <div class="skill-item">
                             <div class="skill-info">
                                 <span class="skill-name">Terraform</span>
-                                <span class="skill-percentage">85%</span>
+                                <span class="skill-percentage">Beginner</span>
                             </div>
                             <div class="skill-bar">
-                                <div class="skill-progress" data-progress="85"></div>
+                                <div class="skill-progress" data-progress="40"></div>
                             </div>
                         </div>
                         <div class="skill-item">
                             <div class="skill-info">
                                 <span class="skill-name">Docker</span>
-                                <span class="skill-percentage">80%</span>
+                                <span class="skill-percentage">Beginner</span>
                             </div>
                             <div class="skill-bar">
-                                <div class="skill-progress" data-progress="80"></div>
+                                <div class="skill-progress" data-progress="45"></div>
                             </div>
                         </div>
                         <div class="skill-item">
                             <div class="skill-info">
                                 <span class="skill-name">Kubernetes</span>
-                                <span class="skill-percentage">70%</span>
+                                <span class="skill-percentage">Beginner</span>
                             </div>
                             <div class="skill-bar">
-                                <div class="skill-progress" data-progress="70"></div>
+                                <div class="skill-progress" data-progress="30"></div>
                             </div>
                         </div>
                     </div>
@@ -323,28 +303,28 @@
                         <div class="skill-item">
                             <div class="skill-info">
                                 <span class="skill-name">Cloud SQL</span>
-                                <span class="skill-percentage">80%</span>
+                                <span class="skill-percentage">Beginner</span>
                             </div>
                             <div class="skill-bar">
-                                <div class="skill-progress" data-progress="80"></div>
+                                <div class="skill-progress" data-progress="40"></div>
                             </div>
                         </div>
                         <div class="skill-item">
                             <div class="skill-info">
                                 <span class="skill-name">Cloud Storage</span>
-                                <span class="skill-percentage">85%</span>
+                                <span class="skill-percentage">Beginner</span>
                             </div>
                             <div class="skill-bar">
-                                <div class="skill-progress" data-progress="85"></div>
+                                <div class="skill-progress" data-progress="45"></div>
                             </div>
                         </div>
                         <div class="skill-item">
                             <div class="skill-info">
                                 <span class="skill-name">PostgreSQL</span>
-                                <span class="skill-percentage">75%</span>
+                                <span class="skill-percentage">Beginner</span>
                             </div>
                             <div class="skill-bar">
-                                <div class="skill-progress" data-progress="75"></div>
+                                <div class="skill-progress" data-progress="35"></div>
                             </div>
                         </div>
                     </div>
@@ -576,7 +556,7 @@
                         <div class="contact-details">
                             <h3>Email</h3>
                             <p>dimasmario864@gmail.com</p>
-                            <a href="mailto:dimasmario@example.com" class="contact-link">Send Message</a>
+                            <a href="mailto:dimasmario864@gmail.com" class="contact-link">Send Message</a>
                         </div>
                     </div>
                     <div class="contact-item">
@@ -623,7 +603,7 @@
                             </div>
                             <div class="form-group">
                                 <label for="email">Email</label>
-                                <input type="email" id="email" name="email" placeholder="email@example.com" required>
+                                <input type="email" id="email" name="email" placeholder="dimasmario864@gmail.com" required>
                             </div>
                         </div>
                         <div class="form-group">
